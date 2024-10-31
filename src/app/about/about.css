@@ -1,0 +1,124 @@
+/* General styles */
+.p{
+    animation: slideInLeft 1.5s ease-in-out;
+    
+}
+.h1 h1 {
+    text-align: center;
+    margin-top: 1cm;
+    font-weight: bold;
+    font-size: 1cm;
+    
+}
+
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px); /* Slide from the left */
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(10px); /* Slight overshoot */
+    }
+    100% {
+        transform: translateX(0); /* Settle in place */
+    }
+}
+
+.mainpara {
+    text-align: left;
+    margin-left: 5.5cm;
+    margin-right: 5cm;
+    margin-top: 1cm;
+   
+    font-size: 20px;
+   
+}
+
+@media (max-width: 768px) {
+    .mainpara {
+        margin-top: 1cm;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 18px;
+    }
+}
+
+.myself img {
+    height: 400px;
+    width: 400px;
+    display: block;
+    margin: 2cm 0 0 9cm;
+    border: 2px solid black;
+    padding: 2px;
+    border-radius: 22%;
+    margin-left: 10cm;
+   
+}
+
+@media (max-width: 768px) {
+    .myself img {
+        height: 370px;
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+        padding: 0;
+    }
+}
+
+h2 {
+    text-align: center;
+    font-size: 1cm;
+    margin-top: 3cm;
+    margin-bottom: 1cm;
+}
+
+.skill-container {
+    margin: 15px auto;
+    width: 50%;
+    text-align: center;
+}
+
+.skill-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.progress-bar-container {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 10px;
+    padding: 0 5px;
+    max-width: 100%;
+    transition: width 0.4s ease;
+}
+
+.communication { background-color: #4caf50; width: 85%; 
+      }
+.teaching { background-color: #2196F3; width: 90%; 
+     }
+.basic-computer { background-color: #FF9800; width: 75%;
+     }
+.voice-quality { background-color: #9C27B0; width: 80%; 
+   }
+.html { background-color: #f06529; width: 70%; 
+   }
+.css { background-color: #264de4; width: 65%; ;}
+.typescript { background-color: #007acc; width: 60%; }
+.nextjs { background-color: #007acc; width: 70%; }

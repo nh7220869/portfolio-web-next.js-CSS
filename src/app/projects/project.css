@@ -1,0 +1,96 @@
+/* project.css */
+
+.container {
+    max-width: 1200px;
+    padding: 20px;
+
+ 
+    border-radius: 8px;
+    animation: slideInLeft 1.5s ease-in-out;
+}
+
+.project-title {
+    font-size: 1cm;
+    margin: 1cm auto 30px; /* Center the title */
+    text-align: center; /* Centers the text */
+    animation: ani 1.5s ease-in-out;
+}
+
+@keyframes ani {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px); /* Slide from the left */
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(10px); /* Slight overshoot */
+    }
+    100% {
+        transform: translateX(0); /* Settle in place */
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px); /* Slide from the left */
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(10px); /* Slight overshoot */
+    }
+    100% {
+        transform: translateX(0); /* Settle in place */
+    }
+  }
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+
+}
+
+.box-title {
+    font-size: 1.2em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 0;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    color: #2980b9;
+}
+

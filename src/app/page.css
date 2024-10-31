@@ -1,0 +1,64 @@
+h2 {
+    text-align: left; /* Align text to the left */
+    margin-left: 5cm; /* Positioning for larger screens */
+    margin-top: 1cm;
+    font-size: 1cm;
+    font-weight: bold;
+    animation: slideInLeft 1.5s ease-in-out;
+}
+
+.para p {
+    text-align: left; /* Keep text aligned to the left */
+    margin-left: 5cm;
+    margin-right: 5cm;
+    margin-top: 1cm;
+ 
+    font-size: 20px;
+    animation: slideInLeft 2s ease-in-out; 
+}
+
+/* Slide-In Animation */
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px); /* Slide from the left */
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(10px); /* Slight overshoot */
+    }
+    100% {
+        transform: translateX(0); /* Settle in place */
+    }
+  }
+
+.image img {
+    height: 400px;
+    width: 400px;
+    display: block; /* Required for margin: auto to work */
+    margin: 2cm auto 0; /* Centers the image horizontally */
+    border: 2px solid black;
+    padding: 2px;
+    border-radius: 22%;
+    animation: slideInLeft 1.5s ease-in-out;
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .image img {
+        height: 350px;
+        width: 310px;
+        margin: 25px auto 0; /* Centered on smaller screens */
+    }
+
+    .para p, h2 {
+        text-align: left; /* Keep text aligned to the left */
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin-top: 1cm;
+    }
+}

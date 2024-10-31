@@ -1,0 +1,38 @@
+/* Loading.css */
+.loading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f0f0f0; /* Light grey background for contrast */
+}
+
+.spinner {
+    border: 6px solid rgba(200, 200, 200, 0.5); /* Light grey background */
+    border-top: 6px solid #ff6347; /* Tomato color for the foreground */
+    border-right: 6px solid #ffd700; /* Gold color for additional gradient effect */
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    animation: spin 0.8s ease-in-out infinite; /* Faster spin with smooth easing */
+    margin-bottom: 1.5rem;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #555; /* Darker grey for the text */
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+}

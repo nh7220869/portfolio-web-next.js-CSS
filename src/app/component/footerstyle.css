@@ -1,0 +1,20 @@
+
+footer {
+    background-color: #2b2727;
+    color: #b6b7af;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin-top: 2cm;
+    font-size: 20px;
+}
+footer b{
+    color: yellow;
+}
+@media (max-width: 768px){
+    footer {
+        font-size: 15px;
+
+    }
+
+}
